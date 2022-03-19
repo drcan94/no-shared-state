@@ -34,7 +34,7 @@ console.log("obj1 en son hali -->",obj1)
 console.log("obj2 en son hali -->",obj2)
 // her iki obj de aslında aynı val değerini input olarak 
 // verirken outputlar değişiyor fonksiyonların çağrılma sıraları 
-// değiştiği için.. aynı zamanda fonksiyonlar her seferinde 
+// değiştiği için.. aynı zamanda fonksiyonlar her seferinde aynı inputa
 // farklı sonuçlar da dönüyor
 
 console.log("\n--- With 'immutable' ---\n")
