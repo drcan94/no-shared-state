@@ -53,12 +53,23 @@ const result6 = f4(obj3)
 const result7 = f4(obj4)
 const result8 = f3(obj4)
 
+const result9 = f3({val:f4(obj3)})
+const result10 = f4({val:f3(obj3)})
+
+const result11 = f3({val:f4(obj4)})
+const result12 = f4({val:f3(obj4)})
+
+
 console.log("obj3 için output -->",obj3)
 console.log("obj4 için output -->",obj4)
 console.log("result5 (f3) için output -->",result5)
 console.log("result6 (f4) için output -->",result6)
 console.log("result7 (f4) için output -->",result7)
 console.log("result8 (f3) için output -->",result8)
+console.log("result9 (f3(f4)) - obj3 için output -->",result9)
+console.log("result10 (f4(f3)) - obj3 için output -->",result10)
+console.log("result11 (f3(f4)) - obj4 için output -->",result10)
+console.log("result12 (f4(f3)) - obj4 için output -->",result10)
 // obj'ler hiç değişmedi. sadece fonksiyon yeni bir obj döndürür ama 
 // onu bir yere eşitlersek sonucu görebiliriz.. fonksiyonlar her 
 // zaman aynı değeri veriyor
