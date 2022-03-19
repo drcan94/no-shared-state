@@ -4,7 +4,7 @@ const obj1 = {val: 3}
 
 const obj2 = {val: 3}
 
-console.log("\n--- With 'shared state' ---\n")
+console.log("\n--- With 'mutable' ---\n")
 
 console.log("obj1 ilk hali -->",obj1)
 console.log("obj2 ilk hali -->",obj2)
@@ -37,7 +37,7 @@ console.log("obj2 en son hali -->",obj2)
 // değiştiği için.. aynı zamanda fonksiyonlar her seferinde 
 // farklı sonuçlar da dönüyor
 
-console.log("\n--- With 'no shared state' ---\n")
+console.log("\n--- With 'immutable' ---\n")
 
 const obj3 = {val: 3}
 
@@ -52,7 +52,7 @@ const f3 = (object) => {
 } 
 const f4 = (object) => {
     const newObj = {...object}
-    return newObj.val *= 1
+    return newObj.val *= 2
 } 
 
 const result5 = f3(obj3)
@@ -76,8 +76,9 @@ console.log("f3 - obj4 için output -->",result8)
 console.log("f4 - obj4 için output -->",result7)
 console.log("f3 - obj3 için output -->",f3(obj3)) // *** burada obj1 içeriği değişmediği için aynı inputa aynı sonuç döner
 console.log("f4 - obj3 için output -->",f4(obj3)) // *** burada obj1 içeriği değişmediği için aynı inputa aynı sonuç döner
-console.log("f3(f4) - obj3 için output -->",result9)
-console.log("f4(f3) - obj3 için output -->",result10)
+console.log("f3(f4) - obj3 için output -->",result9) 
+console.log("f4(f3) - obj3 için output -->",result10) // *** burada obj3 içeriği değişmediği halde aynı inputa farklı sonuçlar döndü 
+                                                      // çünkü henüz "no shared state" uygulamadık. sadece immutable hale getirdik
 console.log("f3(f4) - obj4 için output -->",result11)
 console.log("f4(f3) - obj4 için output -->",result12)
 console.log("obj3 en son hali -->",obj3)
