@@ -24,6 +24,8 @@ console.log("f1 - obj1 için output -->",result1)
 console.log("f1 - obj2 için output -->",result4)
 console.log("f2 - obj1 için output -->",result2)
 console.log("f2 - obj2 için output -->",result3)
+console.log("f1 - obj1 için output -->",f1(obj1)) // *** burada obj1 içeriği değiştiği için aynı inputa farklı sonuç döner
+console.log("f2 - obj1 için output -->",f2(obj1)) // *** burada obj1 içeriği değiştiği için aynı inputa farklı sonuç döner
 console.log("f1(f2) - obj1 için output -->",f1({val:f2(obj1)}))
 console.log("f2(f1) - obj1 için output -->",f2({val:f1(obj1)}))
 console.log("f1(f2) - obj2 için output -->",f1({val:f2(obj2)}))
@@ -72,6 +74,8 @@ console.log("f3 - obj3 için output -->",result5)
 console.log("f4 - obj3 için output -->",result6)
 console.log("f3 - obj4 için output -->",result8)
 console.log("f4 - obj4 için output -->",result7)
+console.log("f3 - obj3 için output -->",f3(obj3)) // *** burada obj1 içeriği değişmediği için aynı inputa aynı sonuç döner
+console.log("f4 - obj3 için output -->",f4(obj3)) // *** burada obj1 içeriği değişmediği için aynı inputa aynı sonuç döner
 console.log("f3(f4) - obj3 için output -->",result9)
 console.log("f4(f3) - obj3 için output -->",result10)
 console.log("f3(f4) - obj4 için output -->",result11)
