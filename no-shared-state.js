@@ -74,8 +74,8 @@ console.log("f3 - obj3 için output -->",result5)
 console.log("f4 - obj3 için output -->",result6)
 console.log("f3 - obj4 için output -->",result8)
 console.log("f4 - obj4 için output -->",result7)
-console.log("f3 - obj3 için output -->",f3(obj3)) // *** burada obj1 içeriği değişmediği için aynı inputa aynı sonuç döner
-console.log("f4 - obj3 için output -->",f4(obj3)) // *** burada obj1 içeriği değişmediği için aynı inputa aynı sonuç döner 
+console.log("f3 - obj3 için output -->",f3(obj3)) // *** burada obj3 içeriği değişmediği için aynı inputa aynı sonuç döner
+console.log("f4 - obj3 için output -->",f4(obj3)) // *** burada obj3 içeriği değişmediği için aynı inputa aynı sonuç döner 
                                                   // (kısmi no shared state sağlandı)
 console.log("f3(f4) - obj3 için output -->",result9) 
 console.log("f4(f3) - obj3 için output -->",result10) // *** burada obj3 içeriği değişmediği halde aynı inputa farklı sonuçlar döndü 
